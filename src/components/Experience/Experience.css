@@ -1,0 +1,92 @@
+.experience-flow {
+    font-family: 'Poppins', sans-serif;
+}
+
+.experience-title {
+    text-align: center;
+    font-size: 60px;
+    color: #00a2ff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.timeline-flow {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 0;
+}
+
+.timeline-flow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #00a2ff;
+    transform: translateX(-50%);
+}
+
+.timeline-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.timeline-row.left {
+    flex-direction: row-reverse;
+}
+
+.timeline-card {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 15px rgba(0, 162, 255, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-circle {
+    width: 18px;
+    height: 18px;
+    background-color: #00a2ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border: 3px solid #f8fafc;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: grey;
+}
+
+.timeline-role {
+    font-size: 20px;
+    color: #00a2ff;
+    margin: 5px 0;
+}
+
+.timeline-company {
+    color: grey;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.timeline-points {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: white;
+}
+
+.timeline-points li {
+    margin-bottom: 8px;
+}

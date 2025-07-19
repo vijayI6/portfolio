@@ -1,0 +1,45 @@
+.navbar {
+    max-height: 80px;
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #beb8b821;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-left {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.username {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#letter {
+    color: #00a2ff;
+}
+
+.navbar-right a {
+    padding-right: 30px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.navbar-right a:hover {
+    color: #00a2ff;
+    transform: color 0.3s ease;
+}
