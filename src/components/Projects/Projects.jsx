@@ -23,6 +23,11 @@ const Project = () => {
             link: 'https://vijayi6.github.io/qr-generator/'
         },
         {
+            title: 'COVID-19 Data Analysis Dashboard',
+            image: '/corona.png',
+            link: 'https://tinyurl.com/547rx5u4'
+        },
+        {
             title: 'Coming Soon',
             image: '/coming-soon.png',
             link: ''
