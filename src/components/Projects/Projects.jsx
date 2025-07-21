@@ -25,7 +25,7 @@ const Project = () => {
         {
             title: 'COVID-19 Data Analysis Dashboard',
             image: '/corona.png',
-            link: 'https://tinyurl.com/547rx5u4'
+            link: 'https://app.powerbi.com/reportEmbed?reportId=616e8648-9a7b-4922-886d-0624c3cb9a99'
         },
         {
             title: 'Coming Soon',
