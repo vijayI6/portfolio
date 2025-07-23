@@ -8,12 +8,12 @@
 
 .project-text {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .project-text h1 {
     margin-top: 100px;
-    font-size: 55px;
+    font-size: 50px;
     color: #00a2ff;
 }
 
@@ -50,6 +50,7 @@
 
 .project-btn {
     display: inline-block;
+    margin-top: 10px;
     padding: 10px 20px;
     background-color: #00a2ff;
     color: black;
@@ -61,7 +62,7 @@
 
 .project-btn:hover {
     background-color: #00a2ff;
-    color: white;
+    color: snow;
     transform: scale(1.2);
 }
 

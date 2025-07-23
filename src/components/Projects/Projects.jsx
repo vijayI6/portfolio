@@ -23,9 +23,9 @@ const Project = () => {
             link: 'https://vijayi6.github.io/qr-generator/'
         },
         {
-            title: 'COVID-19 Data Analysis Dashboard',
+            title: 'COVID-19 Power BI Dashboard',
             image: '/corona.png',
-            link: 'https://app.powerbi.com/reportEmbed?reportId=616e8648-9a7b-4922-886d-0624c3cb9a99'
+            link: 'covid_dashboard.jpg'
         },
         {
             title: 'Coming Soon',

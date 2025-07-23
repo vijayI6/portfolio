@@ -31,7 +31,7 @@ const Contact = () => {
                         <img src="/linkedin.png" alt="linkedin" />
                     </a>
                     <a
-                        href="https://www.instagram.com/vizai_43"
+                        href="https://www.instagram.com/___vijay___34"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
