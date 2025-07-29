@@ -25,7 +25,7 @@ const Project = () => {
         {
             title: 'COVID-19 Power BI Dashboard',
             image: '/corona.png',
-            link: 'covid_dashboard.jpg'
+            link: 'covid_dashboard.png'
         },
         {
             title: 'Coming Soon',
