@@ -8,7 +8,7 @@ const technicalSkills = [
     { name: 'Node.js', level: 85, color: '#33b319' },
     { name: 'Python', level: 90, color: '#3b82f6' },
     { name: 'MySql', level: 80, color: '#c3d8e3' },
-    { name: 'Golang', level: 75, color: '#07c9f0' },
+    { name: 'Bootstrap', level: 90, color: '#07c9f0' },
     { name: 'Git & GitHub', level: 85, color: '#d44a0f' }
 ];
 
@@ -34,7 +34,6 @@ const Skills = () => {
                         <div key={index} className="skill-bar">
                             <div className="skill-info">
                                 <span>{skill.name}</span>
-                                <span>{skill.level}%</span>
                             </div>
                             <div className="bar-background">
                                 <div
