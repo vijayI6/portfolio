@@ -5,6 +5,7 @@ const sections = ['home', 'about', 'skills', 'projects', 'experience', 'contact'
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState('');
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,21 +28,32 @@ const Navbar = () => {
 
     const handleNavClick = (e, id) => {
         e.preventDefault();
+        setMenuOpen(false);
         const target = document.getElementById(id);
         if (target) {
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     };
 
+    const toggleMenu = () => {
+        setMenuOpen(prev => !prev);
+    };
+
     return (
-        <div className="navbar">
+        <nav className="navbar">
             <div className="navbar-left">
                 <a href="#home" onClick={(e) => handleNavClick(e, 'home')}>
                     <h1 className="username"><span id="letter">V</span>ijay.</h1>
                 </a>
             </div>
 
-            <div className="navbar-right">
+            <button className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </button>
+
+            <div className={`navbar-right ${menuOpen ? 'open' : ''}`}>
                 {sections.map((id) => (
                     <a
                         key={id}
@@ -53,7 +65,7 @@ const Navbar = () => {
                     </a>
                 ))}
             </div>
-        </div>
+        </nav>
     );
 };
 

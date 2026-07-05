@@ -47,18 +47,6 @@ body {
 
 /* TABLET LANDSCAPE & SMALL LAPTOPS (768px - 1024px)*/
 @media (max-width: 1024px) {
-    .navbar {
-        max-height: 80px;
-    }
-
-    .navbar-left {
-        font-size: 20px;
-    }
-
-    .navbar-right a {
-        display: none;
-    }
-
     .home-container {
         padding: 30px;
         gap: 30px;
@@ -173,7 +161,7 @@ body {
     }
 
     .contact {
-        margin: 30px;
+        margin: 30px 30px 30px 30px;
     }
 
     .contact-text {

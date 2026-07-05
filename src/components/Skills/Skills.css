@@ -42,6 +42,11 @@
     font-size: 20px;
 }
 
+.skill-percentage {
+    font-weight: 600;
+    color: #00a2ff;
+}
+
 .bar-background {
     background-color: #2e2e2e;
     height: 12px;

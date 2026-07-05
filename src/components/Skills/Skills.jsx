@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './Skills.css';
 
 const technicalSkills = [
@@ -22,6 +23,13 @@ const professionalSkills = [
 ];
 
 const Skills = () => {
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setAnimate(true), 150);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <section className="skills-section" id="skills">
             <h2 className="section-title">Skills & Expertise</h2>
@@ -34,11 +42,12 @@ const Skills = () => {
                         <div key={index} className="skill-bar">
                             <div className="skill-info">
                                 <span>{skill.name}</span>
+                                <span className="skill-percentage">{skill.level}%</span>
                             </div>
                             <div className="bar-background">
                                 <div
                                     className="bar-fill"
-                                    style={{ width: `${skill.level}%`, backgroundColor: skill.color }}
+                                    style={{ width: animate ? `${skill.level}%` : '0%', backgroundColor: skill.color }}
                                 ></div>
                             </div>
                         </div>
